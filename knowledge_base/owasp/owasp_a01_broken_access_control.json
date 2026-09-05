@@ -1,0 +1,38 @@
+{
+  "document_id": "owasp-top10-2021-a01",
+  "title": "OWASP Top 10:2021 - A01 Broken Access Control",
+  "source": "OWASP Foundation",
+  "source_type": "OWASP",
+  "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/",
+  "version": "2021",
+  "publication_date": "2021-09-24",
+  "content": "Access control enforces policy such that users cannot act outside of their intended permissions. Failures typically lead to unauthorized information disclosure, modification, or destruction of all data, or performing a business function outside the user's limits. Common access control vulnerabilities include bypassing access control checks by modifying the URL, internal application state, or the HTML page; permitting viewing or editing someone else's account by providing its unique identifier (IDOR); and missing access controls for POST, PUT, and DELETE on administrative interfaces. Prevention requires enforcing access controls strictly in trusted server-side code, denying access by default, and implementing role-based access control mechanisms.",
+  "framework_metadata": {
+    "owasp": [
+      {
+        "code": "A01:2021",
+        "name": "Broken Access Control",
+        "url": "https://owasp.org/Top10/A01_2021-Broken_Access_Control/"
+      }
+    ],
+    "cwe": [
+      {
+        "cwe_id": "CWE-200",
+        "name": "Exposure of Sensitive Information to an Unauthorized Actor",
+        "url": "https://cwe.mitre.org/data/definitions/200.html"
+      },
+      {
+        "cwe_id": "CWE-639",
+        "name": "Authorization Bypass Through User-Controlled Key",
+        "url": "https://cwe.mitre.org/data/definitions/639.html"
+      }
+    ],
+    "mitre": [],
+    "nist": []
+  },
+  "tags": ["access-control", "authorization", "idor", "owasp-top-10"],
+  "metadata": {
+    "category": "Authorization",
+    "sample_reference": true
+  }
+}

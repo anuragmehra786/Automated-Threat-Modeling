@@ -1,0 +1,39 @@
+{
+  "document_id": "mitre-attack-t1110",
+  "title": "MITRE ATT&CK - T1110: Brute Force",
+  "source": "MITRE ATT&CK",
+  "source_type": "MITRE_ATTACK",
+  "url": "https://attack.mitre.org/techniques/T1110/",
+  "version": "v14.1",
+  "publication_date": "2023-10-31",
+  "content": "Adversaries may use brute force techniques to attempt access to accounts when passwords are unknown or when password hashes are obtained. Brute force methods include password guessing against individual accounts, password spraying across multiple usernames using common passwords, and credential stuffing using leaked username/password pairs. Defensive mitigations outlined in ATT&CK include account lockout policies (M1036), multi-factor authentication (M1032), password complexity and minimum length requirements (M1027), and behavioral monitoring for rapid successive failed login attempts.",
+  "framework_metadata": {
+    "owasp": [
+      {
+        "code": "A07:2021",
+        "name": "Identification and Authentication Failures"
+      }
+    ],
+    "cwe": [
+      {
+        "cwe_id": "CWE-307",
+        "name": "Improper Restriction of Excessive Authentication Attempts"
+      }
+    ],
+    "mitre": [
+      {
+        "technique_id": "T1110",
+        "technique_name": "Brute Force",
+        "tactic": "Credential Access",
+        "url": "https://attack.mitre.org/techniques/T1110/"
+      }
+    ],
+    "nist": []
+  },
+  "tags": ["mitre-attack", "credential-access", "brute-force", "password-spraying"],
+  "metadata": {
+    "technique_id": "T1110",
+    "tactic": "Credential Access",
+    "sample_reference": true
+  }
+}

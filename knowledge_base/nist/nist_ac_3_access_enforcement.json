@@ -1,0 +1,38 @@
+{
+  "document_id": "nist-sp800-53-ac-3",
+  "title": "NIST SP 800-53 Rev. 5 - AC-3: Access Enforcement",
+  "source": "National Institute of Standards and Technology (NIST)",
+  "source_type": "NIST",
+  "url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final",
+  "version": "Rev. 5",
+  "publication_date": "2020-09-23",
+  "content": "The information system enforces approved authorizations for logical access to information and system resources in accordance with applicable access control policies. Access enforcement applies to all subjects (users, processes) and objects (data records, files, endpoints). The system must verify authorization before granting access to resources, prevent unauthorized read, write, execution, or deletion actions, and ensure access decisions are based on explicit role-based or attribute-based authorization rules rather than client-side assertions.",
+  "framework_metadata": {
+    "owasp": [
+      {
+        "code": "A01:2021",
+        "name": "Broken Access Control"
+      }
+    ],
+    "cwe": [
+      {
+        "cwe_id": "CWE-200",
+        "name": "Exposure of Sensitive Information to an Unauthorized Actor"
+      }
+    ],
+    "mitre": [],
+    "nist": [
+      {
+        "control_id": "AC-3",
+        "title": "Access Enforcement",
+        "publication": "NIST SP 800-53 Rev. 5",
+        "url": "https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final"
+      }
+    ]
+  },
+  "tags": ["nist", "access-control", "authorization", "sp-800-53"],
+  "metadata": {
+    "control_family": "Access Control (AC)",
+    "sample_reference": true
+  }
+}

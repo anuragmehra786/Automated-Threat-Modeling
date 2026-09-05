@@ -1,0 +1,38 @@
+{
+  "document_id": "owasp-top10-2021-a07",
+  "title": "OWASP Top 10:2021 - A07 Identification and Authentication Failures",
+  "source": "OWASP Foundation",
+  "source_type": "OWASP",
+  "url": "https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/",
+  "version": "2021",
+  "publication_date": "2021-09-24",
+  "content": "Confirmation of the user's identity, authentication, and session management is critical to protect against authentication-related attacks. Authentication weaknesses occur when the application permits automated attacks such as credential stuffing, permits default or weak passwords, uses weak credential recovery processes, or exposes session identifiers in URLs. Defensive controls include implementing multi-factor authentication (MFA) to prevent automated credential attacks, enforcing password strength requirements, implementing rate limiting on authentication routes, securely managing session IDs with Secure and HttpOnly cookie flags, and invalidating sessions upon logout or timeout.",
+  "framework_metadata": {
+    "owasp": [
+      {
+        "code": "A07:2021",
+        "name": "Identification and Authentication Failures",
+        "url": "https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/"
+      }
+    ],
+    "cwe": [
+      {
+        "cwe_id": "CWE-307",
+        "name": "Improper Restriction of Excessive Authentication Attempts",
+        "url": "https://cwe.mitre.org/data/definitions/307.html"
+      },
+      {
+        "cwe_id": "CWE-384",
+        "name": "Session Fixation",
+        "url": "https://cwe.mitre.org/data/definitions/384.html"
+      }
+    ],
+    "mitre": [],
+    "nist": []
+  },
+  "tags": ["authentication", "session-management", "mfa", "rate-limiting", "owasp-top-10"],
+  "metadata": {
+    "category": "Authentication",
+    "sample_reference": true
+  }
+}
