@@ -32,6 +32,10 @@ Exports:
         - EmbeddedChunks
         - EmbeddingModel
         - embed_chunks
+
+    Vector Store (app.rag.vector_store):
+        - FAISSVectorStore
+        - VectorSearchResult
 """
 
 from app.rag.schemas import (
@@ -69,6 +73,11 @@ from app.rag.embeddings import (
     embed_chunks,
 )
 
+from app.rag.vector_store import (
+    FAISSVectorStore,
+    VectorSearchResult,
+)
+
 __all__ = [
     # Schemas
     "KnowledgeSourceType",
@@ -97,5 +106,9 @@ __all__ = [
     "EmbeddedChunks",
     "EmbeddingModel",
     "embed_chunks",
+    # Vector Store
+    "FAISSVectorStore",
+    "VectorSearchResult",
 ]
+
 
