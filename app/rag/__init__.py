@@ -23,6 +23,15 @@ Exports:
         - clean_and_chunk_documents
         - DEFAULT_CHUNK_SIZE
         - DEFAULT_OVERLAP
+
+    Embeddings (app.rag.embeddings):
+        - DEFAULT_MODEL_NAME
+        - DEFAULT_BATCH_SIZE
+        - EmbeddingBackend
+        - SentenceTransformerBackend
+        - EmbeddedChunks
+        - EmbeddingModel
+        - embed_chunks
 """
 
 from app.rag.schemas import (
@@ -50,6 +59,16 @@ from app.rag.chunking import (
     DEFAULT_OVERLAP,
 )
 
+from app.rag.embeddings import (
+    DEFAULT_MODEL_NAME,
+    DEFAULT_BATCH_SIZE,
+    EmbeddingBackend,
+    SentenceTransformerBackend,
+    EmbeddedChunks,
+    EmbeddingModel,
+    embed_chunks,
+)
+
 __all__ = [
     # Schemas
     "KnowledgeSourceType",
@@ -70,4 +89,13 @@ __all__ = [
     "clean_and_chunk_documents",
     "DEFAULT_CHUNK_SIZE",
     "DEFAULT_OVERLAP",
+    # Embeddings
+    "DEFAULT_MODEL_NAME",
+    "DEFAULT_BATCH_SIZE",
+    "EmbeddingBackend",
+    "SentenceTransformerBackend",
+    "EmbeddedChunks",
+    "EmbeddingModel",
+    "embed_chunks",
 ]
+
